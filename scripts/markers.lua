@@ -34,11 +34,11 @@ function export_markers()
 		local label
 		if is_region then
 			label = "R" .. region_index
-			start = reaper.format_timestr_pos(math.floor(start), "", 5)
-			close = reaper.format_timestr_pos(math.floor(close), "", 5)
+			start = reaper.format_timestr_pos(start, "", 5)
+			close = reaper.format_timestr_pos(close, "", 5)
 		else
 			label = "M" .. region_index
-			start = reaper.format_timestr_pos(math.floor(start), "", 5)
+			start = reaper.format_timestr_pos(start, "", 5)
 			close = start
 		end
 
